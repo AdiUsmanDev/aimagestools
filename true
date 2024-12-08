@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "users": {
+      ".indexOn": ["email"] 
+    },
+    ".read": "true",  // 2024-12-11
+    ".write": "true",  // 2024-12-11
+  }
+}
