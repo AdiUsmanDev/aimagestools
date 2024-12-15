@@ -6,7 +6,6 @@ import 'dart:convert';
 import 'package:crypto/crypto.dart';
 import 'localsession.dart';
 import 'dashboard.dart';
-import 'login.dart';
 
 class daftar extends StatelessWidget {
   @override
