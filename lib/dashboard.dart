@@ -29,7 +29,7 @@ class _DashboardScreenState extends State<AIConverterApp> {
   try {
     final querySnapshot = await FirebaseDatabase.instance
         .ref('users')
-        .orderByChild('email') // Field email pada data
+        .orderByChild('email') 
         .equalTo(email)
         .once();
 
@@ -72,6 +72,7 @@ Future<void> deleteEmailFromFirestore(String? email) async {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 235, 234, 234),
       body: Column(
         children: [
           Container(

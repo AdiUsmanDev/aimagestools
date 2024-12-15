@@ -204,7 +204,6 @@ class _ImageUploadScreenState extends State<ImageUploadScreen> {
 
               SizedBox(height: 30),
 
-              // Image Source Buttons
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -224,7 +223,6 @@ class _ImageUploadScreenState extends State<ImageUploadScreen> {
 
               SizedBox(height: 30),
 
-              // Upload Button
               ElevatedButton.icon(
                 onPressed: _imageFile != null && !_isUploading ? _uploadImage : null,
                 icon: _isUploading
