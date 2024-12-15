@@ -250,7 +250,7 @@ class _ImageAnimationScreenState extends State<ImageAnimationScreen> with Single
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () {
-            Navigator.pop(context); // Kembali ke halaman sebelumnya
+            Navigator.pop(context); 
           },
         ),
         title: const Text(
@@ -263,7 +263,6 @@ class _ImageAnimationScreenState extends State<ImageAnimationScreen> with Single
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Gambar dengan animasi efek petasan (zoom in dan out)
             Transform.scale(
               scale: _scaleAnimation.value,
               child: Image.network(

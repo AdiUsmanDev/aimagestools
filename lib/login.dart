@@ -14,7 +14,7 @@ class mm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Login Aimagestools',
+      title: 'Login',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -225,7 +225,7 @@ Future<void> saveUserWithLinks({
                             setState(() {
                               _isPasswordVisible = !_isPasswordVisible;
                             });
-                          },
+                          }, 
                         ),
                       ),
                     ),

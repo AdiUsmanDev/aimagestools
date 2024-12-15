@@ -145,7 +145,6 @@ class ConvertingScreen extends StatelessWidget {
           pageBuilder: (context, animation, secondaryAnimation) =>
               ImageAnimationScreen(imageUrl: updatedUrl),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
-            // Animasi fade
             var begin = 0.0;
             var end = 1.0;
             var curve = Curves.easeInOut;

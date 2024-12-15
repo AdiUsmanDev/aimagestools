@@ -155,8 +155,6 @@ Future<void> deleteEmailFromFirestore(String? email) async {
                                   );
                                 },
                               );
-
-                              // Jika pengguna mengonfirmasi
                               if (confirm == true) {
                                 String? mail = await getToken();
                                 print(mail);
@@ -207,7 +205,7 @@ Future<void> deleteEmailFromFirestore(String? email) async {
                 mainAxisSpacing: 10,
                 children: [
                   DashboardButton(
-                    icon: Icons.image,
+                    icon: Icons.upload_file,
                     label: 'Upload Image',
                     onPressed: () {
                       Navigator.push(
@@ -217,7 +215,7 @@ Future<void> deleteEmailFromFirestore(String? email) async {
                     },
                   ),
                   DashboardButton(
-                    icon: Icons.photo_library,
+                    icon: Icons.photo_album,
                     label: 'My Gallery',
                     onPressed: () {
                       Navigator.push(
@@ -227,7 +225,7 @@ Future<void> deleteEmailFromFirestore(String? email) async {
                     },
                   ),
                   DashboardButton(
-                    icon: Icons.crop,
+                    icon: Icons.high_quality,
                     label: 'Resolusi Images',
                     onPressed: () {
                       savecon('resolusi');
@@ -238,7 +236,7 @@ Future<void> deleteEmailFromFirestore(String? email) async {
                     },
                   ),
                   DashboardButton(
-                    icon: Icons.crop,
+                    icon: Icons.zoom_in,
                     label: 'Upscaling Images',
                     onPressed: () {
                       savecon('upscaling');
@@ -260,7 +258,7 @@ Future<void> deleteEmailFromFirestore(String? email) async {
                     },
                   ),
                   DashboardButton(
-                    icon: Icons.crop,
+                    icon: Icons.face,
                     label: 'Images AI Face',
                     onPressed: () {
                       savecon('cropingaivideo');

@@ -6,6 +6,7 @@ import 'dart:convert';
 import 'package:crypto/crypto.dart';
 import 'localsession.dart';
 import 'dashboard.dart';
+import 'login.dart';
 
 class daftar extends StatelessWidget {
   @override
@@ -121,7 +122,10 @@ class _RegistrationFormState extends State<RegistrationForm> {
             color: Colors.white,
           ),
           onPressed: () {
-            Navigator.pop(context);
+              Navigator.push(
+              context,
+                MaterialPageRoute(builder: (context) => mm()),
+              );
           },
         ),
         title: const Text('Daftar Akun Baru',
